@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="meuForm">
+    <label for="opcaoA">Opcao A:</label>
+    <input type="checkbox" id="opcaoA"
+    name="opcaoA"><br><br>
+    <label for="opcaoB">Opcao B:</label>
+    <input type="checkbox" id="opcaoB"
+    name="opcaoB"><br><br>
+
+    <label for="motivo">Motivo:</label>
+    <input type="text" id="motivo"
+    name="motivo"><br><br>
+    <input type="submit" value="Enviar">
+         </form>
+
+    <p id="mensagemErro" style="color:red;"></p>
+
+    <script>
+        document.getElementById("meuForm").addEventListener("submit", 
+        function(event) {
+            var opcaoA = document.getElementById("opcaoA").checked;
+            var opcaoB = document.getElementById("opcaoB").checked;
+            var motivo = document.getElementById("motivo").value;
+
+            if((opcaoA && opcaoB) && motivo ===""){
+                event.preventDefault();
+
+                document.getElementById("mensagemErro").textContent = "Preencha o motivo quando duas opcoes estiverem selecionadas"
+            }
+        }
+        );
+    </script>
+
+
+
+    
+</body>
+</html>

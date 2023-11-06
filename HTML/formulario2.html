@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div align = "center" > 
+    <h1>Formulario </h1>
+<fieldset>
+    Nome:
+    <input type="text" autofocus name="Nome"> <br><br>
+
+    idade:
+    <input type="text" name="Idade"> <br><br>
+    
+   Endereco:
+    <input type="text"  name="Endereco"> <br><br>
+    
+   Codigo:
+    <input type="text"  name="Codigo"> <br><br>
+
+   Telefone:
+    <input type="tel" pattern="[0-9]{9}" name="telefone"> <br><br>
+    
+   E-mail:
+    <input type="email" name="E-mail"> <br><br>
+    
+   password:
+    <input type="text"  name="password"> <br>
+</fieldset>
+<fieldset>
+    Sexo <br>
+        <input type="radio" name="Masculino" value="masculino" >Masculino <br>
+        <input type="radio" name="Feminino" value="feminino" >Feminino <br><br>
+    Cidade 
+    <select name="viseu" id="viseu">
+    <option value="viseu">viseu</option>
+    <option value="Guarda">Guarda</option>
+    <option value="Covilhã">Covilhã</option>
+    </select> <br><br>
+
+   NOTAS <br><br>
+    
+    
+    <textarea name="NOTAS" rows="10" cols="30"></textarea> <br> <br>
+
+    <input type="button" name="submeter" value = "submeter"> <br> <br> 
+
+    <label for="birthdaytime"> Data de Nascimento:</label> <br>
+    <input type="date" min="1900-12-31" max="2019-12-31" id="birthdaytime" name="birthdaytime"> <br> <br>
+    <input type="button" name="limpar" value = "limpar"> <br> <br> 
+
+</fieldset>
+
+
+   
+
+    </div>
+</body>
+</html>

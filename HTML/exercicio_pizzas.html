@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas</title>
+    
+</head>
+<body>
+    <fieldset>
+        <h1>Ficha de Encomenda de Pizzas </h1><br>
+
+        <label>Qual a pizza a encomendar? </label>
+        <select>
+          
+            <option value="Marguerita">Marguerita</option>
+            <option value="Caprisiosa">Caprisiosa</option>
+            <option value="Quatro Estacoes">Quatro Estacoes</option>
+            <option value="Calzone">Calzone</option>
+            <option value="Tropical">Tropical</option>
+            <option value="Maritima">Maritima</option>
+            </select> 
+            <label>Quantidade: </label> 
+            <select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">6</option>
+                </select> 
+            <br>
+            <label>Bebida: </label> 
+                <select>
+                    <option value="Cocacola">Cocacola</option>
+                    <option value="Iced Tea">Iced Tea</option>
+                    <option value="Guarana">Guarana</option>
+                    <option value="Fanta">Fanta</option>
+                    <option value="7up">7up</option>
+                    
+                    </select> 
+            <label>Quantidade: </label> 
+                    <select>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="5">6</option>
+                        </select> 
+                        <br>
+            <input type="checkbox" name="Extra queijo" value = "Extra queijo">Extra Queijo
+            <input type="checkbox" name="Massa Grossa" value = "Massa Grossa">Massa Grossa 
+            <input type="checkbox" name="pimentos" value = "pimentos"> pimentos
+            <input type="checkbox" name="Alcachofras" value = "Alcachofras">Alcachofras
+        <br>
+    </fieldset>  
+    <fieldset>
+    <label><strong>Dados para entrega </strong></label><br><br>
+    Nome:
+    <input type="text" autofocus name="Nome"> <br><br>
+    Morada:
+    <input type="text"  name="Morada"> <br><br>
+    Telefone:
+    <input type="tel" pattern="[0-9]{9}" name="telefone"> 
+
+
+    </fieldset>
+    <fieldset>
+        <label>Forma de Pagamento</label><br>
+        <input type="radio" name="Visa" value="Visa" >Visa 
+        <input type="radio" name="conta entrega" value="conta entrega" >conta entrega 
+        <input type="radio" name="A Fatura (30 dias, +15%)" value="A Fatura (30 dias, +15%)" >A Fatura (30 dias, +15%) <br>
+        <label>numero do cartao VISA:</label>
+        <input type="text"  name="visa">
+
+
+    </fieldset>
+
+    <input type="button" name="enviar!" value = "enviar!"> 
+ 
+    <input type="button" name="limpar" value = "limpar"> 
+
+ 
+    
+</body>
+</html>

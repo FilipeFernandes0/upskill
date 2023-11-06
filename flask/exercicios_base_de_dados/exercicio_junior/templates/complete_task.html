@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Complete Task</title>
+</head>
+<body>
+    <h1>Confirm Complete Task</h1>
+    <p>Are you sure you want to mark this task as complete?</p>
+    <form method="POST" action="/confirm_complete_task/{{ task.id }}">
+        <button type="submit">Yes</button>
+        <a href="/">No</a>
+    </form>
+</body>
+</html>

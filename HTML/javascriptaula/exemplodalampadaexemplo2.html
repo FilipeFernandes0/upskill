@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" style="width: 100" height="180">
+    <p>Clica na lampada para ligar/desligar a luz</p>
+    <script >
+        function changeImage(){
+            var image = document.getElementById("myImage");
+            if (image.src.match("bulbon")) { 
+                image.src = "pic_bulboff.gif";
+             } else {
+                image.src="pic_bulbon.gif";
+             }
+
+            }
+    </script>
+
+</body>
+</html>

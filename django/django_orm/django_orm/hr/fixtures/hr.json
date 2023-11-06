@@ -1,0 +1,156 @@
+[
+    {
+        "fields": {
+            "name": "Stock"
+        },
+        "model": "hr.compensation",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "Bonuses"
+        },
+        "model": "hr.compensation",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "Profit Sharing"
+        },
+        "model": "hr.compensation",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "Stock"
+        },
+        "model": "hr.compensation",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "Bonuses"
+        },
+        "model": "hr.compensation",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "Profit Sharing"
+        },
+        "model": "hr.compensation",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "Stock"
+        },
+        "model": "hr.compensation",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "Bonuses"
+        },
+        "model": "hr.compensation",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "Profit Sharing"
+        },
+        "model": "hr.compensation",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "adress": "francisco pissarra de matos",
+            "phone": "961512067"
+        },
+        "model": "hr.contact",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "adress": "rua francisco sousa tavares",
+            "phone": "961511067"
+        },
+        "model": "hr.contact",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "description": "technology",
+            "name": "IT"
+        },
+        "model": "hr.department",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "description": "technology",
+            "name": "IT"
+        },
+        "model": "hr.department",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "compensations": [
+                8,
+                7
+            ],
+            "contact": null,
+            "department": null,
+            "first_name": "John",
+            "last_name": "Doe"
+        },
+        "model": "hr.employee",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "compensations": [
+                7,
+                8
+            ],
+            "contact": null,
+            "department": null,
+            "first_name": "Jane",
+            "last_name": "Doe"
+        },
+        "model": "hr.employee",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "title": "Software Engineer I"
+        },
+        "model": "hr.job",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "title": "Software Engineer II"
+        },
+        "model": "hr.job",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "title": "Software Engineer III"
+        },
+        "model": "hr.job",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "begin_date": "2022-01-01",
+            "employee": 15,
+            "end_date": "9999-12-31",
+            "position": 2
+        },
+        "model": "hr.assignment",
+        "pk": 2
+    }
+]

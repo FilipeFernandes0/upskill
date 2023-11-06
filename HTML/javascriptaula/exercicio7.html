@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="elementoMouse" onmouseover="alterarTexto()"> Passe o mouse sobre mim para ver a alteração</p>
+
+    <script>
+
+       
+        function alterarTexto() {
+
+            var elementoMouse = document.getElementById('elementoMouse');
+            elementoMouse.textContent = "Texto alterado!";
+        }
+
+       
+    </script>
+
+    
+</body>
+</html>

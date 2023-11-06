@@ -1,0 +1,12 @@
+
+body{background-color: #E7EBF0;}
+
+
+h1{color:red; background-color: green;}
+
+
+#paragrafo1{font: "Verdana" "Arial"; font-size: 16px; background-color: lightblue}
+
+b{background-color: yellow;}
+
+#paragrafo2{font: "Serif" "Arial"; font-size: 12px; background-image: url("transferir.png") ;text-decoration: underline }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Delete Task</title>
+</head>
+<body>
+    <h1>Confirm Delete Task</h1>
+    <p>Are you sure you want to delete this task?</p>
+    <form method="POST" action="/confirm_delete_task/{{ task.id }}">
+        <button type="submit">Yes</button>
+        <a href="/">No</a>
+    </form>
+</body>
+</html>

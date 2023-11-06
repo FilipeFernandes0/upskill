@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="campoTexto" placeholder="digita algo...">
+   <p id="conteudoDigitado"></p> 
+    <script>
+        var campoTexto = document.getElementById("campoTexto");
+        var conteudoDigitado = document.getElementById("conteudoDigitado")
+
+        campoTexto.addEventListener('input', function(){
+            conteudoDigitado.textContent = campoTexto.value;
+        });
+    </script>   
+</body>
+</html>

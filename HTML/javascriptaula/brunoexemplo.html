@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="meuForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit"  value="Enviar">
+    </form>
+        <p id="mensagemErronome" style="color:red;"></p>
+
+        <p id="capturarnome"></p>
+        <p id="capturaremail"></p>
+
+        <p id="capturarpassword"></p>
+
+    
+        <script>
+            document.getElementById("meuForm").addEventListener("submit",function(event){
+                let nome =document.getElementById("nome").value;
+                let email =document.getElementById("email").value;
+                let password =document.getElementById("password").value;
+                let submit = true;
+
+                if (nome ==="" || !email.endsWith("@estgl.ipv.pt") || password===""){
+                    event.preventDefault();
+                    document.getElementById("mensagemErronome").textContent="Preencha os espacos corretamente";
+                    submit = false;
+                }
+                if (submit && !window.confirm("quer mesmo submeter?")){
+                    event.preventDefault();
+                    submit = false;
+                 
+
+                }
+
+                document.getElementById("capturarnome").innerHTML = nome;
+                document.getElementById("capturaremail").innerHTML = email;
+
+                document.getElementById("capturarpassword").innerHTML = password;
+                   
+                
+
+            });
+        </script>
+        
+    
+</body>
+</html>

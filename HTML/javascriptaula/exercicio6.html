@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="demo" onclick="myfunction()" >Clica-me</button>
+    <p id="numeroexibido"></p>
+    <script>
+    function myfunction(){
+        var numeroaleatorio = Math.floor(Math.random()*10) +1;
+        var numeroexibido = document.getElementById("numeroexibido");
+        numeroexibido.textContent = "Numero aleatorio: " + numeroaleatorio;
+    }
+    </script>
+</body>
+</html>

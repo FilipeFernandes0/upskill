@@ -1,0 +1,16 @@
+body {background-color: #C6C6C6 ;
+    
+    
+    }
+   
+img { background-image:url("chris.jpeg");
+     width: 800px;
+    height: 700px;
+    float: left;
+    
+    }
+h1{color: white;}
+
+p{font: "Verdana", "Arial";
+    font-size: 1.5;
+color: black;}

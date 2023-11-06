@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo List</title>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <form method="POST" action="/add_task">
+        <input type="text" name="task" placeholder="Add a new task" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {{ task.task }}
+            {% if task.status == 0 %}
+            <a href="/complete_task/{{ task.id }}">Mark as Complete</a>
+            {% endif %}
+            <a href="/delete_task/{{ task.id }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

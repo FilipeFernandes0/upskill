@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    font-family: Verdana, Arial;
+}
+
+.header1{
+    background-color:#9ACD32;
+    border-bottom: solid 4px #006400;
+}
+
+.main1{
+    background-color: #E8E8E8;
+}
+
+.topocentro{
+    background-color:#ADFF2F;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+.centromain{
+    background-color:#ffffff;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+.nome1{
+    color: #006400;
+    font-family: Verdana;
+    font-size: 40px;
+    margin: 0;
+}
+
+.homepage{
+    color: #006400;
+    font-family: Verdana;
+    font-size: 22px;
+    margin: 0;
+}
+
+.imagem{
+	float:right;
+	border:solid;
+}
+
+.nave1{
+    background-color:#006400;
+	border-radius: 15px;
+	width: 55%;
+	height: 30px;
+	position: relative;
+	top:45px;
+}
+
+.nave1 ul li{
+    display: inline;
+}
+
+.nave1 ul li a{
+    text-decoration:none;
+    color: #ffffff;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: .5em;
+}
+
+<form method="get" action="envio_dados.php">
+    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+    <input type="submit" name="enviar" value="Enviar">    
+</form>
+.lista1 li a {
+    color:#000000;
+    text-decoration:none;
+    
+}
+
+.footer1 ul li{
+    display:inline;
+}
+
+.footer1 ul li a{
+    color: white;
+}
+
+.footer1{
+    background-color: #9ACD32;
+	height: 100px;
+    margin:0;
+    padding: 10px;
+}
+
+.alinhar_texto{
+    margin-top: 10px;
+
+
+
+}
+.footer2{
+    background-color:#9ACD32;
+    width: 60%;
+    margin:auto;
+    padding: 30px;
+}

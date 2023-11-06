@@ -1,0 +1,14 @@
+
+a:link {
+    color: rgb(250, 20, 20); font-size: 14px;
+    
+   }
+
+a:hover{text-decoration: underline ;color: rgb(33, 202, 218) ;}
+
+a:visited {color: green ;}
+
+
+img {
+    filter: drop-shadow(8px 8px 10px rgb(14, 1, 1)); 
+  }
